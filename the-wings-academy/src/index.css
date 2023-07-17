@@ -5,10 +5,20 @@ body {
     font-size: 16px;
     color: rgb(13, 13, 13);
     box-sizing: border-box;
-    font-family: "Anek Odia", 'Times New Roman', Times, serif;
+    font-family: "Anek Odia", 'Times New Roman', Times, sans-serif;
+    cursor: default;
 }
 ul {
     margin: 0;
+    list-style: none;
+}
+h1 {
+    margin: 0;
+    font-size: 70px;
+    line-height: 70px;
+    font-weight: 500;
+    color: #ffffff;
+    text-transform: uppercase;
 }
 .parent {
     padding: 20px;
@@ -20,4 +30,13 @@ ul {
     /* padding: 20px; */
     display: flex;
     justify-content: space-between;
+    position: relative;
+    height: inherit;
+}
+.col1,
+.col2 {
+    width: 45%;
+    padding: 50px 0;
+    background-position: center center;
+    background-size: cover;
 }

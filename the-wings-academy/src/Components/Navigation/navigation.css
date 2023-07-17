@@ -1,10 +1,17 @@
+#navigation {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
+}
 .nav_options {
     display: flex;
     align-items: center;
+
 }
 .nav_options ul {
     display: flex;
-    list-style: none;
+    /* list-style: none; */
 }
 .nav_options ul a {
     margin: 0 40px;

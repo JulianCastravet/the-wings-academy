@@ -1,3 +1,4 @@
+import React from "react"
 import { OptionType } from "../../utils/interfaces";
 import Select from 'react-select';
 import "./navigation.css"
@@ -9,9 +10,6 @@ import Flag from "react-world-flags"
 export const Navigation = (props:any) =>{
 
 const {selectValue, setSelectValue} = props;
-
-
-
 
 
  const colourOptions: OptionType[] = [
@@ -47,7 +45,7 @@ let russian = selectValue.value === "ru";
 let romanian = selectValue.value === "ro"
 
 return (
-    <div className="parent">
+    <div id="navigation" className="parent">
         <div className="containerWrapper">
             <div className="logo">
                 <a href='#'></a>

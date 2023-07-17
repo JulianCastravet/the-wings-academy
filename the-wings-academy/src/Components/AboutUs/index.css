@@ -1,0 +1,21 @@
+#aboutUs,
+#whatWeDo {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+}
+#aboutUs h2,
+#whatWeDo h2 {
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+}
+#aboutUs img,
+#whatWeDo img  {
+    /* background-image: url("../../assets/about_us.png"); */
+    height: 100%;
+    width: 100%;
+   
+
+}

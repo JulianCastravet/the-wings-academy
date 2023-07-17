@@ -1,0 +1,12 @@
+.card_wrapper {
+    position: relative;
+    width: 33%;
+    max-width: 400px;
+    border-radius: 8px;
+    background: linear-gradient(180deg, #DDAC4C 0%, rgba(221, 172, 76, 0.00) 100%);
+    border:2px solid red;
+
+}
+.zoomed {
+    transform: scale(1.3);
+}
