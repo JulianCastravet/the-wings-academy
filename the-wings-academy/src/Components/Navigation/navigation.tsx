@@ -17,7 +17,7 @@ const {selectValue, setSelectValue} = props;
       value: "ro",
       label: (
         <>
-          <Flag code="ro"height={16} /> Romanian
+          <Flag code="ro"height={16} /> Română
         </>
       )    },
     {
@@ -48,7 +48,7 @@ return (
     <div id="navigation" className="parent">
         <div className="containerWrapper">
             <div className="logo">
-                <a href='#'></a>
+                <a href='/'></a>
             </div>
             <div className="nav_options">
               {
@@ -56,10 +56,10 @@ return (
                     <nav>
                     <ul>
                         <li>
-                            <a href="#">About Us</a>
+                            <a href="#aboutUs">About Us</a>
                         </li>
                         <li>
-                            <a href="#">What we Do?</a>
+                            <a href="#whatWeDo">What we Do?</a>
                         </li>
                         <li>
                             <a href="#">Contact Us</a>
@@ -73,10 +73,10 @@ return (
                     <nav>
                     <ul>
                         <li>
-                            <a href="#">О Нас</a>
+                            <a href="#aboutUs">О Нас</a>
                         </li>
                         <li>
-                            <a href="#">Что Мы Делаем?</a>
+                            <a href="#whatWeDo">Что Мы Делаем?</a>
                         </li>
                         <li>
                             <a href="#">Контакты</a>
@@ -90,13 +90,13 @@ return (
                     <nav>
                     <ul>
                         <li>
-                            <a href="#">Despre Noi</a>
+                            <a href="#aboutUs">Despre Noi</a>
                         </li>
                         <li>
-                            <a href="#">Ce Facem?</a>
+                            <a href="#whatWeDo">Ce Facem?</a>
                         </li>
                         <li>
-                            <a href="#">Contacteaza-ne</a>
+                            <a href="#">Contactează-ne</a>
                         </li>
                     </ul>
                 </nav>

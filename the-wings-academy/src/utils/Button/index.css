@@ -9,10 +9,24 @@
     font-size: 18px;
     font-weight: 500;
 position: relative;
+transition: all .2s linear;
+color: #000;
+}
+.btn_wrapper:hover {
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+
 }
 .btn_wrapper button {
     width: 100%;
     position: relative;
     height: 100%;
     font-size: inherit;
+    background-color: transparent;
+padding: 10px 40px;
+    border: none;
+    outline: none;
+    color: inherit;
+    cursor: pointer;
 }

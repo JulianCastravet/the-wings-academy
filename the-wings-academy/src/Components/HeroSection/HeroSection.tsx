@@ -1,5 +1,6 @@
 import React from "react"
 import "./heroSection.css"
+import { Title } from "../../utils/Title/Title"
 
 export const HeroSection = ({language}:any)=>{
 
@@ -8,9 +9,9 @@ export const HeroSection = ({language}:any)=>{
     const romanian = language.value === "ro"
     return (
         <div className="heroSection">
-           {romanian && <h1>prima Școală de Aviație din Moldova</h1>}
-            {russian && <h1>Первая школа в Молдове для стюардесс</h1>}
-           {english &&  <h1>first Moldovan flight attendant school</h1>}
+           {romanian && <Title white text="Primul tău ghid de Aviație din Moldova."></Title>}
+            {russian && <Title white text="Ваш первый авиационный гид в Молдове."></Title>}
+           {english &&  <Title white text="Your First Aviation Guide in Moldova."></Title>}
         </div>
     )
 }

@@ -6,15 +6,16 @@ interface Props {
     zoomed?: boolean;
     cardTitle: string;
     btnTitle:string;
+    imgSrc: any
 }
 
 export const ShowCard = (props:Props)=>{
-    const {language,zoomed, cardTitle, btnTitle} = props;
+    const {zoomed, cardTitle, btnTitle,imgSrc} = props;
 
     return (
         <div className={`card_wrapper ${zoomed? "zoomed":""}` } >
             
-            <div className="card_icon"></div>
+            <div className="card_icon"><img src={imgSrc} alt="image"></img></div>
             <div className="card_title">{cardTitle}</div>
 
             <Button title={btnTitle}></Button>

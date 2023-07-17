@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.css";
+import { Title2 } from "../../utils/Title2/Title2";
 
 export const WhatWeDo = ({ language }: any) => {
-  const training = require("../../assets/training.png");
+
+  const training = require("../../assets/offers.jpeg");
 
   const romanian = language.value === "ro";
   const russian = language.value === "ru";
@@ -10,147 +12,99 @@ export const WhatWeDo = ({ language }: any) => {
 
   return (
     <div id="whatWeDo">
-      <h2>
-        {romanian && "Ce Oferim?"}
-        {russian && "Что Мы Предоставляем?"}
-        {english && "What Do We Offer?"}
-      </h2>
-
       <div className="containerWrapper">
         <div className="col1">
           <img src={training} alt="about us img"></img>
         </div>
 
         <div className="col2">
+          <div className="wrp">
+        {romanian && <Title2 title="Ce Oferim?"></Title2>}
+        {russian && <Title2 title="Что Мы Предлагаем?"></Title2>}
+        {english && <Title2 title="What Do We Offer?"></Title2>}
           {romanian && (
-            <div className="aboutUs_text">
-              Descoperă ceea ce oferim la The Wings Academy:
+
+<>
+
+<div className="aboutUs_text">
+              The Wings Academy oferă:
               <ul>
                 <li>
-                  1. Pregătire de înaltă calitate: Oferim pregătire intensivă și
-                  specializată pentru interviul de recrutare ca însoțitor de
-                  bord. Echipa noastră de experți vă va învăța toate abilitățile
-                  și cunoștințele necesare pentru a vă distinge în industria
-                  aviației.
+                  1. Pregătire intensivă și specializată pentru interviul de recrutare însoțitor de bord.
                 </li>
                 <li>
-                  2. Suport personalizat: Suntem alături de tine în fiecare pas
-                  al călătoriei tale. Oferim suport individualizat și consiliere
-                  pentru a vă ajuta să vă atingeți obiectivele și să vă
-                  maximizați potențialul.
+                  2. Suport personalizat și consiliere în fiecare etapă a călătoriei tale.
                 </li>
                 <li>
-                  3. Costuri accesibile: Am creat o alternativă mai ieftină
-                  pentru a vă îndeplini visul de a deveni însoțitor de bord,
-                  fără a face compromisuri în ceea ce privește calitatea
-                  pregătirii. La The Wings Academy, veți obține valoare maximă
-                  pentru investiția dvs.
+                  3. Costuri accesibile fără a compromite calitatea pregătirii.
                 </li>
                 <li>
-                  4. Experiență în aviație: Echipa noastră are o vastă
-                  experiență în industria aviației și vă va împărtăși
-                  cunoștințele și sfaturile practice necesare pentru a vă
-                  evidenția în fața angajatorilor.
+                  4. Experiență în aviație și sfaturi practice pentru a vă evidenția în fața angajatorilor.
                 </li>
                 <li>
-                  5. Rezultate dovedite: Suntem mândri de succesul cursanților
-                  noștri. Pregătirea noastră eficientă a condus la angajarea cu
-                  succes a peste 500 de tineri în domeniul aviației.
-                </li>
+                  5. Ghidul tău pentru toată cariera.
+                </li> <li>
+                  6. Dosar perfect pentru a fi top candidat la un interviu de recrutare.
+                </li>  
               </ul>
-              Alegeți The Wings Academy pentru a vă transforma visul de a deveni
-              însoțitor de bord în realitate. Oferim pregătire de calitate,
-              suport personalizat și rezultate demonstrabile. Începeți astăzi
-              călătoria către o carieră de succes în aviație!
-            </div>
+           
+            </div></>
+           
           )}
            {russian && (
             <div className="aboutUs_text">
-              Descoperă ceea ce oferim la The Wings Academy:
+             Wings Academy предлагает:
               <ul>
                 <li>
-                  1. Pregătire de înaltă calitate: Oferim pregătire intensivă și
-                  specializată pentru interviul de recrutare ca însoțitor de
-                  bord. Echipa noastră de experți vă va învăța toate abilitățile
-                  și cunoștințele necesare pentru a vă distinge în industria
-                  aviației.
+                  1. Интенсивную и специализированную подготовку для собеседования на должность бортпроводника.
                 </li>
                 <li>
-                  2. Suport personalizat: Suntem alături de tine în fiecare pas
-                  al călătoriei tale. Oferim suport individualizat și consiliere
-                  pentru a vă ajuta să vă atingeți obiectivele și să vă
-                  maximizați potențialul.
+                  2. Персонализированную поддержку и руководство на каждом этапе вашего пути.
                 </li>
                 <li>
-                  3. Costuri accesibile: Am creat o alternativă mai ieftină
-                  pentru a vă îndeplini visul de a deveni însoțitor de bord,
-                  fără a face compromisuri în ceea ce privește calitatea
-                  pregătirii. La The Wings Academy, veți obține valoare maximă
-                  pentru investiția dvs.
+                  3. Доступные затраты без ущерба качеству обучения.
                 </li>
                 <li>
-                  4. Experiență în aviație: Echipa noastră are o vastă
-                  experiență în industria aviației și vă va împărtăși
-                  cunoștințele și sfaturile practice necesare pentru a vă
-                  evidenția în fața angajatorilor.
+                  4. Опыт в авиации и практические советы, чтобы вы выделялись перед работодателями.
                 </li>
                 <li>
-                  5. Rezultate dovedite: Suntem mândri de succesul cursanților
-                  noștri. Pregătirea noastră eficientă a condus la angajarea cu
-                  succes a peste 500 de tineri în domeniul aviației.
+                  5. Ваш гид на протяжении всей карьеры.
+                </li>
+                <li>
+                  6. Идеальное портфолио, чтобы стать лучшим кандидатом на собеседовании.
                 </li>
               </ul>
-              Alegeți The Wings Academy pentru a vă transforma visul de a deveni
-              însoțitor de bord în realitate. Oferim pregătire de calitate,
-              suport personalizat și rezultate demonstrabile. Începeți astăzi
-              călătoria către o carieră de succes în aviație!
+        
             </div>
           )}
            {english && (
             <div className="aboutUs_text">
-              Descoperă ceea ce oferim la The Wings Academy: 
+              Wings Academy offers:
               <ul>
             
                 <li>
-                  1. Pregătire de înaltă calitate: Oferim pregătire intensivă și
-                  specializată pentru interviul de recrutare ca însoțitor de
-                  bord. Echipa noastră de experți vă va învăța toate abilitățile
-                  și cunoștințele necesare pentru a vă distinge în industria
-                  aviației.
+                  1. Intensive and specialized training for flight attendant recruitment interviews.
                 </li>
                 <li>
-                  2. Suport personalizat: Suntem alături de tine în fiecare pas
-                  al călătoriei tale. Oferim suport individualizat și consiliere
-                  pentru a vă ajuta să vă atingeți obiectivele și să vă
-                  maximizați potențialul.
+                  2. Personalized support and guidance at every stage of your journey.
                 </li>
                 <li>
-                  3. Costuri accesibile: Am creat o alternativă mai ieftină
-                  pentru a vă îndeplini visul de a deveni însoțitor de bord,
-                  fără a face compromisuri în ceea ce privește calitatea
-                  pregătirii. La The Wings Academy, veți obține valoare maximă
-                  pentru investiția dvs.
+                  3. Affordable costs without compromising the quality of training.
                 </li>
                 <li>
-                  4. Experiență în aviație: Echipa noastră are o vastă
-                  experiență în industria aviației și vă va împărtăși
-                  cunoștințele și sfaturile practice necesare pentru a vă
-                  evidenția în fața angajatorilor.
+                  4. Aviation experience and practical advice to make you stand out to employers.
                 </li>
                 <li>
-                  5. Rezultate dovedite: Suntem mândri de succesul cursanților
-                  noștri. Pregătirea noastră eficientă a condus la angajarea cu
-                  succes a peste 500 de tineri în domeniul aviației.
+               5. Your guide throughout your career.
+                </li>
+                <li>
+               6. A perfect portfolio to become a top candidate in a recruitment interview.
                 </li>
               </ul>
-              
-              Alegeți The Wings Academy pentru a vă transforma visul de a deveni
-              însoțitor de bord în realitate. Oferim pregătire de calitate,
-              suport personalizat și rezultate demonstrabile. Începeți astăzi
-              călătoria către o carieră de succes în aviație!
             </div>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

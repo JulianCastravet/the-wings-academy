@@ -13,7 +13,7 @@ function App() {
 
   const [language, setLanguage] = useState({value:"ro",   label: (
     <>
-      <Flag code="ro"height={16} /> Romana
+      <Flag code="ro"height={16} /> Română
     </>
   ) })
 
