@@ -7,6 +7,7 @@ import { BigWrapper } from './Components/BigWrapper/BigWrapper';
 import { AboutUs } from './Components/AboutUs/AboutUs';
 import { WhatWeDo } from './Components/WhatWeDo/WhatWeDo';
 import { Offers } from './Components/Offers/Offers';
+import { Comments } from './Components/Comments/Comments';
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
       <AboutUs language={language}/>
       <WhatWeDo language={language}/>
       <Offers language={language}/>
-
+    <Comments language={language}/>
      </BigWrapper >
      
     </div>

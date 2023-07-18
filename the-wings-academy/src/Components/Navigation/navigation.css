@@ -5,8 +5,12 @@
   background-color: white;
 }
 #navigation .containerWrapper {
-  padding: 0;
+  padding: 0 20px;
 }
+#navigation.parent {
+  width: auto;
+}
+
 .nav_options {
     display: flex;
     align-items: center;

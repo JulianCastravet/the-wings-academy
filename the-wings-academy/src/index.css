@@ -4,9 +4,11 @@ body {
     -webkit-tap-highlight-color: transparent;
     font-size: 16px;
     color: rgb(13, 13, 13);
-    box-sizing: border-box;
     font-family: "Anek Odia", 'Times New Roman', Times, sans-serif;
     cursor: default;
+}
+body * {
+    box-sizing: border-box;
 }
 ul {
     margin: 0;
@@ -15,6 +17,8 @@ ul {
 
 .parent {
     padding: 20px;
+    width: 100%;
+    /* overflow: hidden; */
 }
 .containerWrapper {
     margin: 0 auto;

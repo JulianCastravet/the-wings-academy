@@ -1,7 +1,7 @@
 import React from 'react';
 import { ShowCard } from '../../utils/ShowCard/ShowCard';
-import "./index.css"
 import { Title2 } from '../../utils/Title2/Title2';
+import "./index.css"
 
 export const Offers = ({language}:any)=>{
 
@@ -71,13 +71,13 @@ export const Offers = ({language}:any)=>{
         <>
         <div className='containerWrapper'>
        <div className='parent'>
-      {romanian && <Title2  centered title='Mai Oferim Și:'></Title2>}
-      {russian && <Title2  centered title='Предлагаем Ешё:'></Title2>}
-      {english && <Title2 centered title='We Also Offer:'></Title2>}
+      {romanian && <Title2  centered title='Mai Oferim Și:'/>}
+      {russian && <Title2  centered title='Предлагаем Ешё:'/>}
+      {english && <Title2 centered title='We Also Offer:'/>}
         <div className='offer_wrapper'>
-<ShowCard language={language} btnTitle={firstBtnTitle()} cardTitle={firstCardTitle()} imgSrc={individual}></ShowCard>
-<ShowCard zoomed language={language} btnTitle={secondBtnTitle()} cardTitle={secondCardTitle()} imgSrc={marathon}></ShowCard>
-<ShowCard language={language} btnTitle={thirdBtnTitle()} cardTitle={thirdCardTitle()} imgSrc={cvEdit}></ShowCard>
+<ShowCard language={language} btnTitle={firstBtnTitle()} cardTitle={firstCardTitle()} imgSrc={individual}/>
+<ShowCard zoomed language={language} btnTitle={secondBtnTitle()} cardTitle={secondCardTitle()} imgSrc={marathon}/>
+<ShowCard language={language} btnTitle={thirdBtnTitle()} cardTitle={thirdCardTitle()} imgSrc={cvEdit}/>
             
 
         </div>

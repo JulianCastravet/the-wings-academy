@@ -45,8 +45,9 @@ let russian = selectValue.value === "ru";
 let romanian = selectValue.value === "ro"
 
 return (
-    <div id="navigation" className="parent">
-        <div className="containerWrapper">
+    <div id="navigation">
+      <div className="parent">
+      <div className="containerWrapper ">
             <div className="logo">
                 <a href='/'></a>
             </div>
@@ -59,7 +60,7 @@ return (
                             <a href="#aboutUs">About Us</a>
                         </li>
                         <li>
-                            <a href="#whatWeDo">What we Do?</a>
+                            <a href="#whatWeDo">What We Do?</a>
                         </li>
                         <li>
                             <a href="#">Contact Us</a>
@@ -113,6 +114,7 @@ return (
                 
             </div>
         </div>
+      </div>
 
 
     </div>
