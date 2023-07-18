@@ -66,6 +66,10 @@ export const Offers = ({language}:any)=>{
         return "Написание Резюме"
     }
 
+    const handleGoTo=():void=>{
+        document.location.href="/#contacts"
+    }
+
 
     return (
         <>
@@ -75,9 +79,9 @@ export const Offers = ({language}:any)=>{
       {russian && <Title2  centered title='Предлагаем Ешё:'/>}
       {english && <Title2 centered title='We Also Offer:'/>}
         <div className='offer_wrapper'>
-<ShowCard language={language} btnTitle={firstBtnTitle()} cardTitle={firstCardTitle()} imgSrc={individual}/>
-<ShowCard zoomed language={language} btnTitle={secondBtnTitle()} cardTitle={secondCardTitle()} imgSrc={marathon}/>
-<ShowCard language={language} btnTitle={thirdBtnTitle()} cardTitle={thirdCardTitle()} imgSrc={cvEdit}/>
+<ShowCard language={language} btnTitle={firstBtnTitle()} cardTitle={firstCardTitle()} imgSrc={individual} onClick={()=>handleGoTo()}/>
+<ShowCard zoomed language={language} btnTitle={secondBtnTitle()} cardTitle={secondCardTitle()} imgSrc={marathon} onClick={()=>handleGoTo()}/>
+<ShowCard language={language} btnTitle={thirdBtnTitle()} cardTitle={thirdCardTitle()} imgSrc={cvEdit} onClick={()=>handleGoTo()}/>
             
 
         </div>

@@ -3,10 +3,10 @@ import "./index.css"
 
 
 
-export const Button=({title}:any) =>{
+export const Button=({title, onClick}:any) =>{
     return(
         <div className='btn_wrapper'>
-        <button>{title}</button>
+        <button onClick={onClick}>{title}</button>
         </div>
     )
 }

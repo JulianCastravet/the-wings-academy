@@ -17,14 +17,14 @@ const {selectValue, setSelectValue} = props;
       value: "ro",
       label: (
         <>
-          <Flag code="ro"height={16} /> Română
+          <Flag code="ro"height={16} /> <span>Română</span> 
         </>
       )    },
     {
       value: "ru",
       label: (
         <>
-          <Flag code="ru"  height={16}/> Русский
+          <Flag code="ru"  height={16}/> <span>Русский</span>
         </>
       )
     },
@@ -32,7 +32,7 @@ const {selectValue, setSelectValue} = props;
       value: "eng",
       label: (
         <>
-          <Flag code="gb" height={16} /> English
+          <Flag code="gb" height={16} /><span> English</span>
         </>
       )
     }
@@ -63,7 +63,7 @@ return (
                             <a href="#whatWeDo">What We Do?</a>
                         </li>
                         <li>
-                            <a href="#">Contact Us</a>
+                            <a href="#contacts">Contact Us</a>
                         </li>
                     </ul>
                 </nav>
@@ -80,7 +80,7 @@ return (
                             <a href="#whatWeDo">Что Мы Делаем?</a>
                         </li>
                         <li>
-                            <a href="#">Контакты</a>
+                            <a href="#contacts">Контакты</a>
                         </li>
                     </ul>
                 </nav>
@@ -97,7 +97,7 @@ return (
                             <a href="#whatWeDo">Ce Facem?</a>
                         </li>
                         <li>
-                            <a href="#">Contactează-ne</a>
+                            <a href="#contacts">Contactează-ne</a>
                         </li>
                     </ul>
                 </nav>
