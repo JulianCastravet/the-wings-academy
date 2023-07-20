@@ -15,9 +15,9 @@ function App() {
   const [language, setLanguage] = useState({
     value: "ro",
     label: (
-      <div>
-        <Flag code="ro" height={16} /> <span>Română</span>
-      </div>
+      <>
+        <Flag code="ro" height={20} />
+      </>
     ),
   });
 

@@ -16,7 +16,8 @@ export const ShowCard = (props:Props)=>{
     return (
         <div className={`card_wrapper ${zoomed? "zoomed":""}` } >
             
-            <div className="card_icon"><img src={imgSrc} alt="image"></img></div>
+            <div className="card_icon">{imgSrc}
+            </div>
             <div className="card_title">{cardTitle}</div>
 
             <Button title={btnTitle} onClick={onClick}></Button>

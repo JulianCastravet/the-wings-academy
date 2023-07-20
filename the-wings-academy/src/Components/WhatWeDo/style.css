@@ -1,5 +1,27 @@
 
-#whatWeDo h2 {
-    font-size: 60px;
-    line-height: 60px;
+.checkIcon {
+    background-image: url("../../assets/check-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+}
+
+.listItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+
+}
+
+.aboutUs_text ul {
+    padding-top: 20px;
+}
+
+@media screen and (max-width:768px) {
+    #whatWeDo .containerWrapper {
+        flex-direction: column-reverse;
+    }
 }

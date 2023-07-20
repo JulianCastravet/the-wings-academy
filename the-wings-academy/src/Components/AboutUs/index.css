@@ -19,3 +19,22 @@
     position: sticky;
     top: 150px;
 }
+
+.aboutUs_text {
+    padding: 15px 0;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    #aboutUs img,
+#whatWeDo img  {
+    height: 70%;
+    width: 100%;
+}
+}
+@media screen and (max-width:768px){
+    .aboutUs_text {
+        font-size: 14px;
+    }
+}

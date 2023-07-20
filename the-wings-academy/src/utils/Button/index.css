@@ -2,7 +2,6 @@
     border: 2px solid #000;
     border-radius: 4px;
     background-color: transparent;
-    max-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,4 +28,10 @@ padding: 10px 40px;
     outline: none;
     color: inherit;
     cursor: pointer;
+}
+
+@media  screen and (max-width:768px) {
+   .btn_wrapper {
+    font-size: 16px;
+   }
 }

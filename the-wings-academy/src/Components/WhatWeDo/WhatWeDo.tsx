@@ -29,22 +29,22 @@ export const WhatWeDo = ({ language }: any) => {
 <div className="aboutUs_text">
               The Wings Academy oferă:
               <ul>
-                <li>
-                  1. Pregătire intensivă și specializată pentru interviul de recrutare însoțitor de bord.
+                <li className="listItem">
+                <span className="checkIcon"/> Pregătire intensivă și specializată pentru interviul de recrutare însoțitor de bord.
                 </li>
-                <li>
-                  2. Suport personalizat și consiliere în fiecare etapă a călătoriei tale.
+                <li className="listItem">
+                <span className="checkIcon"/> Suport personalizat și consiliere în fiecare etapă a călătoriei tale.
                 </li>
-                <li>
-                  3. Costuri accesibile fără a compromite calitatea pregătirii.
+                <li className="listItem">
+                <span className="checkIcon"/> Costuri accesibile fără a compromite calitatea pregătirii.
                 </li>
-                <li>
-                  4. Experiență în aviație și sfaturi practice pentru a vă evidenția în fața angajatorilor.
+                <li className="listItem">
+                <span className="checkIcon"/> Experiență în aviație și sfaturi practice pentru a vă evidenția în fața angajatorilor.
                 </li>
-                <li>
-                  5. Ghidul tău pentru toată cariera.
-                </li> <li>
-                  6. Dosar perfect pentru a fi top candidat la un interviu de recrutare.
+                <li className="listItem">
+                <span className="checkIcon"/> Ghidul tău pentru toată cariera.
+                </li> <li className="listItem">
+                <span className="checkIcon"/> Dosar perfect pentru a fi top candidat la un interviu de recrutare.
                 </li>  
               </ul>
            
@@ -55,23 +55,23 @@ export const WhatWeDo = ({ language }: any) => {
             <div className="aboutUs_text">
              Wings Academy предлагает:
               <ul>
-                <li>
-                  1. Интенсивную и специализированную подготовку для собеседования на должность бортпроводника.
+                <li className="listItem">
+                <span className="checkIcon"/> Интенсивную и специализированную подготовку для собеседования на должность бортпроводника.
                 </li>
-                <li>
-                  2. Персонализированную поддержку и руководство на каждом этапе вашего пути.
+                <li className="listItem">
+                <span className="checkIcon"/> Персонализированную поддержку и руководство на каждом этапе вашего пути.
                 </li>
-                <li>
-                  3. Доступные затраты без ущерба качеству обучения.
+                <li className="listItem">
+                <span className="checkIcon"/>Доступные затраты без ущерба качеству обучения.
                 </li>
-                <li>
-                  4. Опыт в авиации и практические советы, чтобы вы выделялись перед работодателями.
+                <li className="listItem">
+                <span className="checkIcon"/>Опыт в авиации и практические советы, чтобы вы выделялись перед работодателями.
                 </li>
-                <li>
-                  5. Ваш гид на протяжении всей карьеры.
+                <li className="listItem">
+                <span className="checkIcon"/> Ваш гид на протяжении всей карьеры.
                 </li>
-                <li>
-                  6. Идеальное портфолио, чтобы стать лучшим кандидатом на собеседовании.
+                <li className="listItem">
+                <span className="checkIcon"/> Идеальное портфолио, чтобы стать лучшим кандидатом на собеседовании.
                 </li>
               </ul>
         
@@ -82,23 +82,23 @@ export const WhatWeDo = ({ language }: any) => {
               Wings Academy offers:
               <ul>
             
-                <li>
-                  1. Intensive and specialized training for flight attendant recruitment interviews.
+                <li className="listItem">
+                <span className="checkIcon"/> Intensive and specialized training for flight attendant recruitment interviews.
                 </li>
-                <li>
-                  2. Personalized support and guidance at every stage of your journey.
+                <li className="listItem">
+                <span className="checkIcon"/> Personalized support and guidance at every stage of your journey.
                 </li>
-                <li>
-                  3. Affordable costs without compromising the quality of training.
+                <li className="listItem">
+                <span className="checkIcon"/>Affordable costs without compromising the quality of training.
                 </li>
-                <li>
-                  4. Aviation experience and practical advice to make you stand out to employers.
+                <li className="listItem">
+                <span className="checkIcon"/>Aviation experience and practical advice to make you stand out to employers.
                 </li>
-                <li>
-               5. Your guide throughout your career.
+                <li className="listItem">
+                <span className="checkIcon"/>Your guide throughout your career.
                 </li>
-                <li>
-               6. A perfect portfolio to become a top candidate in a recruitment interview.
+                <li className="listItem">
+                <span className="checkIcon"/> A perfect portfolio to become a top candidate in a recruitment interview.
                 </li>
               </ul>
             </div>

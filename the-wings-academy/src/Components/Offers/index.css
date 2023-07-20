@@ -3,6 +3,24 @@
     justify-content: space-between;
     align-items: center;
     max-width: 1600px;
-    padding: 100px 20px;
+    padding: 100px 0px;
     margin: 0 auto;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .offer_wrapper {
+       padding: 60px 0px;
+    }
+}
+@media screen and (max-width:768px) {
+    .offer_wrapper {
+        padding: 20px 0;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .offer_wrapper img {
+        width: 100%;
+
+    }
 }

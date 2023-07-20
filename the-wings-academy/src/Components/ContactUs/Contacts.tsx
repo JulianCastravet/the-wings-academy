@@ -27,7 +27,7 @@ export const Contacts = ({ language }: any) => {
     return romanian?"Poșta electronică:": english?"E-mail:": "Электронная почта:"
   }
   const setMailPlaceholder = ()=>{
-    return romanian?"ion.rusu@gmail.com:": english?"john.doe@gmail.com": "иван.иванов@mail.ru";
+    return romanian?"ion.rusu@gmail.com": english?"john.doe@gmail.com": "иван.иванов@mail.ru";
   }
   const setSubjectlabel = ()=>{
     return romanian?"Subiect:": english?"Subject:": "Тема:";
@@ -61,7 +61,9 @@ export const Contacts = ({ language }: any) => {
             {russian &&
               "Хотели бы вы узнать больше о The Wings Academy и о том, как мы можем помочь вам осуществить вашу мечту стать бортпроводником? Пожалуйста, заполните форму ниже, и мы свяжемся с вами в кратчайшие сроки. Мы с нетерпением ждем встречи с вами и готовы провести вас через каждый шаг вашего обучения. Мы с нетерпением ждем вашего обращения!"}
 
-            <div className="form">
+            
+          </div>
+          <div className="form">
               <Form fields={["name", "phone", "email", "subject", "text"]}>
                 <Input
                   name="name"
@@ -106,7 +108,6 @@ export const Contacts = ({ language }: any) => {
 
               </Form>
             </div>
-          </div>
         </div>
       </div>
     </div>

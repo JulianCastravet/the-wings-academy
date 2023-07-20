@@ -13,7 +13,6 @@
     justify-content: space-between;
     padding: 40px;
     min-height: 450px;
-    margin: 0 40px;
 
 }
 .zoomed {
@@ -23,9 +22,40 @@
 .card_title {
     font-size: 30px;
     text-align: center;
+    line-height: 35px;
 }
 
-.card_icon img {
-    max-width: 100px;
-    max-height: 100px;
+.card_icon svg {
+    height: 100px;
+}
+@media screen and ( max-width:1024px) {
+    .card_wrapper {
+        min-height: 300px;
+        padding: 15px;
+    }
+    .card_title {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .card_icon svg {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .card_wrapper {
+        width: 100%;
+margin-bottom: 20px;
+background: linear-gradient(313deg, #DDAC4C 0%, rgba(221, 172, 76, 0.00) 100%);
+    }
+    .zoomed {
+        transform: none;
+    }
+    .card_title {
+        font-size: 20px;
+    }
+    .card_icon svg {
+        height: 50px;
+    }
+    
 }

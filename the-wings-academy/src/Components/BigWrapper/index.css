@@ -1,3 +1,9 @@
 .bigWrapper {
     background: linear-gradient(180deg, #E0BA6F 0%, rgba(233, 231, 231, 0.00) 100%);
 }
+@media screen and (max-width:768px) {
+.bigWrapper {
+    margin-bottom: 100px
+
+}
+}

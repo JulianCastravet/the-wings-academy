@@ -33,24 +33,23 @@
 /* .nav_options ul a:visited, */
 .nav_options ul a:hover {
   color: gold;
+  cursor: pointer;
 }
 
 .nav_options ul a:before {
-  content: "";
+  content: '';
   position: absolute;
-  bottom: 0;
   left: 50%;
-  width: 0;
+  bottom: 0px;
+  width: 0px;
   height: 2px;
-  background-color: gold;
-  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
-  transform: translateX(-50%);
+  background: gold;
+  transition: all 0.45s;
 }
 
 .nav_options ul a:hover::before {
   width: 100%;
   left: 0;
-  transform: translateX(0);
 }
 .logo {
   position: relative;
@@ -83,4 +82,66 @@
 }
 #navigation .css-b62m3t-container > * {
   color: #bd8820 !important;
+}
+
+@media screen and (max-width:1024px) {
+  .nav_options ul a {
+margin: 0 12px;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  #navigation .containerWrapper {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .logo,
+  .menuIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+  #menuClose {
+    fill:#bd8820;
+    width: 30px;
+  }
+
+  #menuClose .cls-1 {
+    fill:none;
+  }
+  #menuOpen {
+    border: 2px solid #bd8820;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+  }
+
+  #menuOpen .cls-1 {
+    fill: #bd8820;
+
+  }
+  #menuOpen .cls-2 {
+    fill:none;
+  }
+
+.ReactModal__Overlay nav,
+.ReactModal__Overlay .nav_options,
+.ReactModal__Overlay ul  {
+  height: 100%;
+  width: 100%;
+}
+  .ReactModal__Overlay .nav_options ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    justify-content: space-around;    
+  }
 }

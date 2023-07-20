@@ -2,6 +2,9 @@ import React from 'react';
 import { ShowCard } from '../../utils/ShowCard/ShowCard';
 import { Title2 } from '../../utils/Title2/Title2';
 import "./index.css"
+import { Edit } from '../../utils/Icons/Edit';
+import { OneToOne } from '../../utils/Icons/OneToOne';
+import {  Steward } from '../../utils/Icons/Steward';
 
 export const Offers = ({language}:any)=>{
 
@@ -9,9 +12,9 @@ export const Offers = ({language}:any)=>{
     const english = language.value ==="eng"
     const russian = language.value ==="ru"
 
-    const individual = require("../../assets/one-to-one.png")
-    const marathon = require("../../assets/marathon.png")
-    const cvEdit = require("../../assets/cv_edit.png")
+    // const individual = require("../../assets/speak.svg")
+    // const marathon = require("../../assets/stewart.svg")
+    // const cvEdit = require("../../assets/write.svg")
 
     function firstBtnTitle():string{
         if(romanian) {
@@ -23,7 +26,7 @@ export const Offers = ({language}:any)=>{
     }
     function secondBtnTitle():string{
         if(romanian) {
-            return "Înscrie-te"
+            return "Înscrie‑te"
         } else if(english){
             return "Register"
         }
@@ -78,10 +81,11 @@ export const Offers = ({language}:any)=>{
       {romanian && <Title2  centered title='Mai Oferim Și:'/>}
       {russian && <Title2  centered title='Предлагаем Ешё:'/>}
       {english && <Title2 centered title='We Also Offer:'/>}
+      
         <div className='offer_wrapper'>
-<ShowCard language={language} btnTitle={firstBtnTitle()} cardTitle={firstCardTitle()} imgSrc={individual} onClick={()=>handleGoTo()}/>
-<ShowCard zoomed language={language} btnTitle={secondBtnTitle()} cardTitle={secondCardTitle()} imgSrc={marathon} onClick={()=>handleGoTo()}/>
-<ShowCard language={language} btnTitle={thirdBtnTitle()} cardTitle={thirdCardTitle()} imgSrc={cvEdit} onClick={()=>handleGoTo()}/>
+<ShowCard language={language} btnTitle={firstBtnTitle()} cardTitle={firstCardTitle()} imgSrc={<OneToOne/>} onClick={()=>handleGoTo()}/>
+<ShowCard zoomed language={language} btnTitle={secondBtnTitle()} cardTitle={secondCardTitle()} imgSrc={<Steward/>} onClick={()=>handleGoTo()}/>
+<ShowCard language={language} btnTitle={thirdBtnTitle()} cardTitle={thirdCardTitle()} imgSrc={<Edit/>} onClick={()=>handleGoTo()}/>
             
 
         </div>

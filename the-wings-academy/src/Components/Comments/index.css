@@ -80,4 +80,21 @@ margin-right: auto;
     margin: 0 auto;
 }
 
+@media screen and (max-width:1024px) {
+    .personName {
+        font-size: 24px;
+    }
+    .personStudy {
+        font-size: 18px;
+    }
+    .personComment {
+        margin-top: 20px;
+    }
+    .slick-list .slick-track {
+        margin-top: 0;
+        padding-top: 20px;
+        height: 440px;
+    }
+}
+
 
