@@ -13,10 +13,10 @@ import { FormThemeProvider } from "react-form-component";
 
 function App() {
   const [language, setLanguage] = useState({
-    value: "ro",
+    value: "eng",
     label: (
       <>
-        <Flag code="ro" height={20} />
+        <Flag code="gb" height={20} />
       </>
     ),
   });
@@ -33,7 +33,7 @@ function App() {
         <Navigation
           selectValue={language}
           setSelectValue={handleSelectChange}
-        ></Navigation>
+        />
         <HeroSection language={language}></HeroSection>
         <BigWrapper>
           <AboutUs language={language} />

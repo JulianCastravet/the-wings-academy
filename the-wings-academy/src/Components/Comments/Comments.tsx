@@ -170,12 +170,12 @@ useEffect(() => {
 
          {isMobile && (
           <div className="offer_wrapper">
-<img src={Andrei}/>
-<img src={Adelina}/>
-<img src={Nicoleta}/>
-<img src={Nicoleta2}/>
-<img src={Daniela}/>
-<img src={Valeria}/>
+<img  alt="personReview"src={Andrei}/>
+<img  alt="personReview"src={Adelina}/>
+<img  alt="personReview"src={Nicoleta}/>
+<img  alt="personReview"src={Nicoleta2}/>
+<img  alt="personReview"src={Daniela}/>
+<img  alt="personReview"src={Valeria}/>
           </div>
          )}
         </div>

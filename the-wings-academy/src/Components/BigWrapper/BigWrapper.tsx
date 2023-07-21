@@ -1,6 +1,5 @@
-import React, { ReactElement, ReactNode } from "react";
+import React from "react";
 import "./index.css"
-import { JsxElement } from "typescript";
 
 export const BigWrapper=({children}:any):JSX.Element=>{
 

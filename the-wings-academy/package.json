@@ -1,9 +1,10 @@
 {
   "name": "the-wings-academy",
   "version": "0.1.0",
-  "homepage": ".",
+  "homepage": "http://thewingsacademy.md",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -13,7 +14,8 @@
     "@types/react-dom": "^18.2.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-form-component": "^2.4.4",
+    "react-form-component": "^2.8.0",
+    "react-loader-spinner": "^5.3.4",
     "react-modal": "^3.16.1",
     "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.9",
@@ -25,6 +27,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -52,6 +56,7 @@
     "@svgr/webpack": "^8.0.1",
     "@types/react-slick": "^0.23.10",
     "@types/react-world-flags": "^1.4.2",
-    "file-loader": "^6.2.0"
+    "file-loader": "^6.2.0",
+    "gh-pages": "^6.3.0"
   }
 }
