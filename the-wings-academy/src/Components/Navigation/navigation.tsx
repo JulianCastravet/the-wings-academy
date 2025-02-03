@@ -79,7 +79,10 @@ export const Navigation = (props: any) => {
         {isMobile === false ? (
           <div className="containerWrapper ">
             <div className="logo">
-              <a title="Home" href="/" />
+              <a
+                title="Home"
+                href="https://juliancastravet.github.io/the-wings-academy/"
+              />
             </div>
             <div className="nav_options">
               {english && (
@@ -301,7 +304,7 @@ export const Navigation = (props: any) => {
                             spy={true}
                             smooth={true}
                             offset={-70}
-                            duration={500} 
+                            duration={500}
                           >
                             Contact Us
                           </Link>
