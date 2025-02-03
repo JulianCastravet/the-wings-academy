@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/the-wings-academy/static/css/main.1c045f04.css",
-    "main.js": "/the-wings-academy/static/js/main.fcd57cd2.js",
+    "main.js": "/the-wings-academy/static/js/main.0caa94ba.js",
     "static/media/Nicoleta1.png": "/the-wings-academy/static/media/Nicoleta1.e8b5951d9e8efb9a2732.png",
     "static/media/hero2.jpg": "/the-wings-academy/static/media/hero2.bae853b8becb37a561a3.jpg",
     "static/media/Adelina.png": "/the-wings-academy/static/media/Adelina.48963c6f62d055f0845b.png",
@@ -18,10 +18,10 @@
     "static/media/slick.woff": "/the-wings-academy/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/the-wings-academy/index.html",
     "main.1c045f04.css.map": "/the-wings-academy/static/css/main.1c045f04.css.map",
-    "main.fcd57cd2.js.map": "/the-wings-academy/static/js/main.fcd57cd2.js.map"
+    "main.0caa94ba.js.map": "/the-wings-academy/static/js/main.0caa94ba.js.map"
   },
   "entrypoints": [
     "static/css/main.1c045f04.css",
-    "static/js/main.fcd57cd2.js"
+    "static/js/main.0caa94ba.js"
   ]
 }
