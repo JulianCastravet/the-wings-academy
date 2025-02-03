@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/JulianCastravet/the-wings-academy/static/css/main.deeea3d4.css",
+    "main.js": "/JulianCastravet/the-wings-academy/static/js/main.0ad51cf8.js",
+    "static/media/Nicoleta1.png": "/JulianCastravet/the-wings-academy/static/media/Nicoleta1.e8b5951d9e8efb9a2732.png",
+    "static/media/hero2.jpg": "/JulianCastravet/the-wings-academy/static/media/hero2.bae853b8becb37a561a3.jpg",
+    "static/media/Adelina.png": "/JulianCastravet/the-wings-academy/static/media/Adelina.48963c6f62d055f0845b.png",
+    "static/media/Nicoleta2.png": "/JulianCastravet/the-wings-academy/static/media/Nicoleta2.3f3106a90bbbfe81b49f.png",
+    "static/media/Daniela.png": "/JulianCastravet/the-wings-academy/static/media/Daniela.5ee3c8e4e41a88a4e187.png",
+    "static/media/Valeria.png": "/JulianCastravet/the-wings-academy/static/media/Valeria.b6ff4100ebaa63901763.png",
+    "static/media/Andrei.png": "/JulianCastravet/the-wings-academy/static/media/Andrei.d5a30202de45c6995609.png",
+    "static/media/offers.jpeg": "/JulianCastravet/the-wings-academy/static/media/offers.ecfb02e353e1e16fb474.jpeg",
+    "static/media/about_us.jpeg": "/JulianCastravet/the-wings-academy/static/media/about_us.8949821df0edb775c45c.jpeg",
+    "static/media/twa_logo.jpeg": "/JulianCastravet/the-wings-academy/static/media/twa_logo.1ea8f64a928557cd8aae.jpeg",
+    "static/media/slick.svg": "/JulianCastravet/the-wings-academy/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/JulianCastravet/the-wings-academy/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/JulianCastravet/the-wings-academy/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/JulianCastravet/the-wings-academy/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/JulianCastravet/the-wings-academy/index.html",
+    "main.deeea3d4.css.map": "/JulianCastravet/the-wings-academy/static/css/main.deeea3d4.css.map",
+    "main.0ad51cf8.js.map": "/JulianCastravet/the-wings-academy/static/js/main.0ad51cf8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.deeea3d4.css",
+    "static/js/main.0ad51cf8.js"
+  ]
+}

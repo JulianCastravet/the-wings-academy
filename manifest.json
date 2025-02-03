@@ -1,0 +1,8 @@
+{
+  "short_name": "TWA",
+  "name": "The Wings Academy",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
