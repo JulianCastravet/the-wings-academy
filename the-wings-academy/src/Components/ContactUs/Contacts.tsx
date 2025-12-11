@@ -12,35 +12,31 @@ import Form, {
 } from "react-form-component";
 import { useLanguage } from "../../utils/contexts/languageContext";
 import { texts } from "../../utils/texts";
+import { environment } from "../../environment";
 
 export const Contacts = () => {
   const { language } = useLanguage();
 
   const [loading, setLoading] = useState(false);
 
-  let serviceID =
-    process.env.NODE_ENV === "production" ? "service_lomxsqs" : "";
-  let templateID =
-    process.env.NODE_ENV === "production" ? "template_litz9le" : "";
-  let public_key = process.env.NODE_ENV === "production" ? "" : "";
-
   const submitForm = async (fields: any) => {
     setLoading(true);
+
     try {
       emailjs
         .send(
-          serviceID,
-          templateID,
+          environment.emailJs.serviceID,
+          environment.emailJs.templateID,
           {
             from_name: fields.from_name,
             to_name: "The Wings Academy",
-            from_email: fields.from_email,
-            phone: fields.phone,
+            from_mail: fields.from_email,
+            phone_no: fields.phone,
             to_email: "to_email",
             subject: fields.subject,
             message: fields.message,
           },
-          public_key
+          environment.emailJs.publicKey
         )
         .then(() => {
           setLoading(false);

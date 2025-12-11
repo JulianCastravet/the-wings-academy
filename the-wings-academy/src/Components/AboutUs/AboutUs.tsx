@@ -21,7 +21,7 @@ export const AboutUs = () => {
           </div>
         </div>
         <div className="col2">
-          <img src="public/assets/about_us.jpg" alt="about us img"></img>
+          <img src={`${process.env.PUBLIC_URL}/assets/about_us.jpeg`} alt="about us img"></img>
         </div>
       </div>
     </div>

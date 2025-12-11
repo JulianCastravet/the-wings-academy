@@ -12,7 +12,7 @@ export const Offers = () => {
   const { language } = useLanguage();
 
   const handleGoTo = (): void => {
-    document.location.href = "/#contacts";
+    document.location.href = "#contacts";
   };
 
   return (
@@ -26,20 +26,20 @@ export const Offers = () => {
               btnTitle={texts.btnText.extraOffer[language.value]}
               cardTitle={texts.cartTexts.first[language.value]}
               imgSrc={<OneToOne />}
-              onClick={() => handleGoTo()}
+              onClick={handleGoTo}
             />
             <ShowCard
               zoomed
               btnTitle={texts.btnText.register[language.value]}
               cardTitle={texts.cartTexts.second[language.value]}
               imgSrc={<Steward />}
-              onClick={() => handleGoTo()}
+              onClick={handleGoTo}
             />
             <ShowCard
               btnTitle={texts.btnText.extraOffer[language.value]}
               cardTitle={texts.cartTexts.third[language.value]}
               imgSrc={<Edit />}
-              onClick={() => handleGoTo()}
+              onClick={handleGoTo}
             />
           </div>
         </div>
