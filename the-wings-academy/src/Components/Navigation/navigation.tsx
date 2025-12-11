@@ -1,15 +1,14 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { OptionType } from "../../utils/interfaces";
+import { languageOptions } from "../../utils/interfaces";
 import Select from "react-select";
 import "./navigation.css";
-import Flag from "react-world-flags";
-//@ts-ignore
 import { Link } from "react-scroll";
-//@ts-ignore
 import Modal from "react-modal";
+import { Language, useLanguage } from "../../utils/contexts/languageContext";
+import { texts } from "../../utils/texts";
 
-export const Navigation = (props: any) => {
-  const { selectValue, setSelectValue } = props;
+export const Navigation = () => {
+  const { language, setLanguage } = useLanguage();
 
   const [width, setWidth] = useState<number>(window.innerWidth);
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -36,184 +35,80 @@ export const Navigation = (props: any) => {
     },
   };
 
+  const handleSetLanguage = (language: Language) => {
+    setLanguage(language);
+  };
+
   Modal.setAppElement("div");
 
   const handleOpenModal = useCallback(() => {
     setIsOpen(!isOpen);
   }, [isOpen, setIsOpen]);
 
-  const colourOptions: OptionType[] = [
-    {
-      value: "ro",
-      label: (
-        <>
-          <Flag code="ro" height={20} />
-        </>
-      ),
-    },
-    {
-      value: "ru",
-      label: (
-        <>
-          <Flag code="ru" height={20} />
-        </>
-      ),
-    },
-    {
-      value: "eng",
-      label: (
-        <>
-          <Flag code="gb" height={16} />
-        </>
-      ),
-    },
-  ];
-
-  let english = selectValue.value === "eng";
-  let russian = selectValue.value === "ru";
-  let romanian = selectValue.value === "ro";
-
   return (
     <div id="navigation">
       <div className="parent">
-        {isMobile === false ? (
-          <div className="containerWrapper ">
-            <div className="logo">
-              <a
-                title="Home"
-                href="https://juliancastravet.github.io/the-wings-academy/"
-              />
-            </div>
-            <div className="nav_options">
-              {english && (
-                <nav>
-                  <ul>
-                    <li>
-                      <Link
-                        to="aboutUs"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        About Us
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="whatWeDo"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        What We Do?
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="contacts"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        Contact Us
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
-              )}
-              {russian && (
-                <nav>
-                  <ul>
-                    <li>
-                      <Link
-                        to="aboutUs"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        О Нас
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="whatWeDo"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        Что Мы Делаем?
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="contacts"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        Контакты
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
-              )}
-              {romanian && (
-                <nav>
-                  <ul>
-                    <li>
-                      <Link
-                        to="aboutUs"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        Despre Noi
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="whatWeDo"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        Ce Facem?
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
-                        to="contacts"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration={500}
-                      >
-                        Contactează-ne
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
-              )}
-
-              <Select
-                isSearchable={false}
-                defaultValue={selectValue}
-                options={colourOptions}
-                onChange={setSelectValue}
-              />
-            </div>
-          </div>
-        ) : (
+        {!isMobile && (
           <>
-            {/* mobile version */}
+            <div className="containerWrapper ">
+              <div className="logo">
+                <a
+                  title="Home"
+                  href="https://juliancastravet.github.io/the-wings-academy/"
+                >
+                  {" "}
+                </a>
+              </div>
+              <div className="nav_options">
+                <nav>
+                  <ul>
+                    <li>
+                      <Link
+                        to="aboutUs"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        {texts.links.about[language.value]}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="whatWeDo"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        {texts.links.whatWeDo[language.value]}
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="contacts"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                      >
+                        {texts.links.contacts[language.value]}
+                      </Link>
+                    </li>
+                  </ul>
+                </nav>
+                <Select
+                  isSearchable={false}
+                  defaultValue={language}
+                  options={languageOptions}
+                  onChange={(e) => handleSetLanguage(e!)}
+                />
+              </div>
+            </div>
+          </>
+        )}
+        {isMobile && (
+          <>
             <div className="containerWrapper ">
               <div onClick={handleOpenModal} className="menuIcon">
                 {!isOpen && (
@@ -255,13 +150,15 @@ export const Navigation = (props: any) => {
               </div>
 
               <div className="logo">
-                <a href="/" title="" />
+                <a href="/" title="">
+                  {" "}
+                </a>
               </div>
               <Select
                 isSearchable={false}
-                defaultValue={selectValue}
-                options={colourOptions}
-                onChange={setSelectValue}
+                defaultValue={language}
+                options={languageOptions}
+                onChange={(e) => handleSetLanguage(e!)}
               />
             </div>
 
@@ -273,123 +170,43 @@ export const Navigation = (props: any) => {
             >
               <>
                 <div className="nav_options">
-                  {english && (
-                    <nav>
-                      <ul>
-                        <li>
-                          <Link
-                            to="aboutUs"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            About Us
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="whatWeDo"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            What We Do?
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="contacts"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            Contact Us
-                          </Link>
-                        </li>
-                      </ul>
-                    </nav>
-                  )}
-                  {russian && (
-                    <nav>
-                      <ul>
-                        <li>
-                          <Link
-                            to="aboutUs"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            О Нас
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="whatWeDo"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            Что Мы Делаем?
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="contacts"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            Контакты
-                          </Link>
-                        </li>
-                      </ul>
-                    </nav>
-                  )}
-                  {romanian && (
-                    <nav>
-                      <ul>
-                        <li>
-                          <Link
-                            to="aboutUs"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            Despre Noi
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="whatWeDo"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            Ce Facem?
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="contacts"
-                            spy={true}
-                            smooth={true}
-                            offset={-70}
-                            duration={500}
-                          >
-                            Contactează-ne
-                          </Link>
-                        </li>
-                      </ul>
-                    </nav>
-                  )}
+                  <nav>
+                    <ul>
+                      <li>
+                        <Link
+                          to="aboutUs"
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                        >
+                          {texts.links.about[language.value]}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="whatWeDo"
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                        >
+                          {texts.links.whatWeDo[language.value]}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to="contacts"
+                          spy={true}
+                          smooth={true}
+                          offset={-70}
+                          duration={500}
+                        >
+                          {texts.links.contacts[language.value]}
+                        </Link>
+                      </li>
+                    </ul>
+                  </nav>
                 </div>
               </>
             </Modal>

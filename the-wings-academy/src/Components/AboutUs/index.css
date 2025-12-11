@@ -1,40 +1,39 @@
 #aboutUs,
 #whatWeDo {
-    max-width: 1600px;
-    margin: 0 auto;
-    padding: 0 20px;
-
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 #aboutUs img,
-#whatWeDo img  {
-    height: 100%;
-    width: 100%;
+#whatWeDo img {
+  height: 100%;
+  width: 100%;
 }
-.col1 .wrp{
-    position: sticky;
-    top: 150px;
+.col1 .wrp {
+  position: sticky;
+  top: 150px;
 }
 
-.col2 .wrp{
-    position: sticky;
-    top: 150px;
+.col2 .wrp {
+  position: sticky;
+  top: 150px;
 }
 
 .aboutUs_text {
-    padding: 15px 0;
-    letter-spacing: 1px;
-    line-height: 20px;
+  padding: 15px 0;
+  letter-spacing: 1px;
+  line-height: 20px;
 }
 
-@media screen and (max-width:1024px) {
-    #aboutUs img,
-#whatWeDo img  {
+@media screen and (max-width: 1024px) {
+  #aboutUs img,
+  #whatWeDo img {
     height: 70%;
     width: 100%;
+  }
 }
-}
-@media screen and (max-width:768px){
-    .aboutUs_text {
-        font-size: 14px;
-    }
+@media screen and (max-width: 768px) {
+  .aboutUs_text {
+    font-size: 14px;
+  }
 }

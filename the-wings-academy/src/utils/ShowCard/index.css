@@ -1,61 +1,58 @@
-
 :root {
-    --width: 25%;
+  --width: 25%;
 }
 .card_wrapper {
-    position: relative;
-    width: var(--width);
-    border-radius: 8px;
-    background: linear-gradient(180deg, #DDAC4C 0%, rgba(221, 172, 76, 0.00) 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    min-height: 450px;
-
+  position: relative;
+  width: var(--width);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #ddac4c 0%, rgba(221, 172, 76, 0) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  min-height: 450px;
 }
 .zoomed {
-    /* width: calc(var(--width) + 50px); */
-    transform: scale(1.2);
+  /* width: calc(var(--width) + 50px); */
+  transform: scale(1.2);
 }
 .card_title {
-    font-size: 30px;
-    text-align: center;
-    line-height: 35px;
+  font-size: 30px;
+  text-align: center;
+  line-height: 35px;
 }
 
 .card_icon svg {
-    height: 100px;
+  height: 100px;
 }
-@media screen and ( max-width:1024px) {
-    .card_wrapper {
-        min-height: 300px;
-        padding: 15px;
-    }
-    .card_title {
-        font-size: 24px;
-        line-height: 30px;
-    }
-    .card_icon svg {
-        height: 60px;
-    }
+@media screen and (max-width: 1024px) {
+  .card_wrapper {
+    min-height: 300px;
+    padding: 15px;
+  }
+  .card_title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .card_icon svg {
+    height: 60px;
+  }
 }
 
-@media screen and (max-width:768px) {
-    .card_wrapper {
-        width: 100%;
-margin-bottom: 20px;
-background: linear-gradient(313deg, #DDAC4C 0%, rgba(221, 172, 76, 0.00) 100%);
-    }
-    .zoomed {
-        transform: none;
-    }
-    .card_title {
-        font-size: 20px;
-    }
-    .card_icon svg {
-        height: 50px;
-    }
-    
+@media screen and (max-width: 768px) {
+  .card_wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+    background: linear-gradient(313deg, #ddac4c 0%, rgba(221, 172, 76, 0) 100%);
+  }
+  .zoomed {
+    transform: none;
+  }
+  .card_title {
+    font-size: 20px;
+  }
+  .card_icon svg {
+    height: 50px;
+  }
 }

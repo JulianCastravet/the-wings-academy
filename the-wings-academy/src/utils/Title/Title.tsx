@@ -1,15 +1,13 @@
 import React from "react";
-import "./index.css"
+import "./index.css";
 
 interface props {
-    text:string;
-    white?:boolean
+  text: string;
+  white?: boolean;
 }
 
-export const Title = (props:props)=>{
- const {text, white} = props;
+export const Title = (props: props) => {
+  const { text, white } = props;
 
-    return (
-        <h1 className={white?"white":""}>{text}</h1>
-    )
-}
+  return <h1 className={white ? "white" : ""}>{text}</h1>;
+};

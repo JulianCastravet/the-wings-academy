@@ -1,11 +1,6 @@
 import React from "react";
-import "./index.css"
+import "./index.css";
 
-export const BigWrapper=({children}:any):JSX.Element=>{
-
-    return (
-        <div className="bigWrapper">
-{children}
-        </div>
-    )
-}
+export const BigWrapper = ({ children }: any): JSX.Element => {
+  return <div className="bigWrapper">{children}</div>;
+};
